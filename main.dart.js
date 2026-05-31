@@ -67868,7 +67868,7 @@ A.VW.prototype={
 $0(){return A.lv(A.e6("mailto:jitendramistry76@gmail.com",0,null),B.cq)},
 $S:0}
 A.VX.prototype={
-$0(){return A.lv(A.e6("https://jittumistry.github.io/assets/images/Jitendra_Mistry_Resume.pdf",0,null),B.cq)},
+$0(){return A.lv(A.e6("https://jittumistry.github.io/assets/assets/images/Jitendra_Mistry_Resume.pdf",0,null),B.cq)},
 $S:0}
 A.Or.prototype={
 I(a){var s=this.c?B.fM:B.aX,r=t.V3
