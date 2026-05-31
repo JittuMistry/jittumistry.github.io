@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jitendra Mistry — Senior Flutter Engineer</title>
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Senior Flutter Engineer with 6+ years building cross-platform mobile and web apps across fintech, IoT, travel, and healthcare. Available for full-time and freelance.">
+  <meta name="keywords"
+    content="Flutter developer, Flutter engineer, mobile developer, cross-platform, Android, iOS, Flutter Web, fintech, IoT, Gandhinagar, India">
+  <meta name="author" content="Jitendra Mistry">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jitendra Mistry — Senior Flutter Engineer">
+  <meta property="og:description"
+    content="Building production-grade mobile and web applications with Flutter. Fintech · IoT · Healthcare · Travel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jitendramistry.dev">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jitendra Mistry — Flutter Engineer">
+  <meta name="twitter:description" content="Senior Flutter Engineer · Android · iOS · Web">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #0F172A;
+      overflow: hidden;
+    }
+
+    #loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #0F172A;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .loader-text {
+      font-family: system-ui, sans-serif;
+      color: #94A3B8;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .loader-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366F1, #06B6D4);
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.8);
+      }
+    }
+  </style>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1065714111" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */;
+  </script>
+  <script src="flutter.js" defer></script>
+</head>
+
+<body>
+  <div id="loading">
+    <div class="loader-dot"></div>
+    <span class="loader-text">Loading portfolio...</span>
+  </div>
+
+  <script>
+    window.addEventListener('load', function (ev) {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            var loading = document.getElementById('loading');
+            if (loading) loading.remove();
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
